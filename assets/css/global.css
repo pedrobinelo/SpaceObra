@@ -32,21 +32,19 @@ header {
     }
 
 /* Redes Sociais */
-#social {
-    width: 30vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.social-img {
-    width: 40%;
-}
+    #social {
+        width: 30vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-img {
+        width: 40%;
+    }
+
 /* Menu hamburguer */
     #menu {
-        /* width: 20vw; */
         z-index: 2;
-        /* padding: 1rem;
-        margin: 25px 10px 0 0; */
     }
 
     .change-menu-bg {
@@ -97,10 +95,6 @@ header {
         font-size: 1.125rem;
         text-decoration: none;
     }
-
-    .nav li a:hover {
-        font-weight: bold;
-    }
     
     .menu-bg, #menu {
         right: 20px;
@@ -138,6 +132,10 @@ header {
         height: 460px;
         transform: translate(-60%,-30%);
     }
+/* Menu para Desktop */
+    .desktop-nav {
+        display: none;
+    }
 
 /*Conteúdo principal */
 
@@ -164,124 +162,170 @@ header {
         text-decoration: none;
         font-size: 1.25rem;
     }
+
 /* Footer */
-footer {
-    background: #222;
-    color: white;
-    padding: 10px 0;
-    font-size: 1rem;
-    width: 100vw;
-    /* position: fixed;
-    bottom: 0; */
-}
-
-.footer-text {
-    margin: 10px 0;
-}
-
-/* Desktop */
-@media (min-width: 1024px) {
-    /* Logo Space Obra */
-    #logo {
-        padding: 0;
-    }
-    .logo-img {
-        width: 20%;
-    }
-
-    /* Menu hamburguer */
-    #menu {
-        margin: 0;
-        padding: 1rem 1rem 0 0;
-    }
-
-    .change-menu-bg {
-        background-color: #a39c9c;
-    }
-
-    #menu-bar {
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-    }
-
-    .bar {
-        height: 5px;
-        width: 100%;
-        background-color: #302f2f;
-        display: block;
-        border-radius: 5px;
-        transition: 0.3s ease;
-    }
-
-    #bar1 {
-        transform: translateY(-4px);
-    }
-      
-    #bar3 {
-        transform: translateY(4px);
-    }
-
-    .nav {
-        transition: 0.3s ease;
-        display: none;
-    }
-
-    .nav ul {
-        padding: 0 10px 0 0;
-    }
-
-    .nav li {
-        list-style: none;
+    footer {
+        background: #222;
+        color: white;
         padding: 10px 0;
+        font-size: 1rem;
+        width: 100vw;
+        /* position: fixed;
+        bottom: 0; */
+    }
+
+    .footer-text {
+        margin: 10px 0;
+    }
+
+/* Tablet - Pequeno e médio */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Logo Space Obra */
+        #logo {
+            width: 20vw;
+        }
+        .logo-img {
+            width: 95%;
+        }
+    /* Redes Sociais */
+        #social {
+            width: 80%;
+            justify-content: flex-start;
+        }
+        .social-img {
+            width: 30%;
+        } 
+}
+
+/* Tablet - Grande */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    /* Logo Space Obra */
+        #logo {
+            width: 20vw;
+        }
+        .logo-img {
+            width: 95%;
+        }
+    /* Redes Sociais */
+        #social {
+            width: 60%;
+            justify-content: flex-start;
+        }
+        .social-img {
+            width: 30%;
+        }
+    
+    /* Exibir o menu de navegação no desktop */
+    .desktop-nav {
+        display: block;
+    }
+
+    .desktop-nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding: 16px;
+        margin: 0;
+    }
+
+    .desktop-nav li {
+        list-style: none;
+        padding: 16px;
         font-weight: bold;
     }
 
-    .nav li a {
+    .desktop-nav li a {
+        color: #302f2f;
+        font-size: 1.25rem;
+        text-decoration: none;
+        white-space: nowrap; /* Não quebrar a linha */
+    }
+
+    .desktop-nav li a:hover {
+        color: #3c3ac5;
+    }
+
+    /* Ocultar o menu hamburguer no desktop */
+    #menu {
+        display: none;
+    }
+
+    .back-button {
+        display: none;
+    }
+
+    footer {
+        font-size: 1.25rem;
+    }
+}
+/* Desktop */
+@media (min-width: 1200px) {
+    header {
+        justify-content: space-between;
+    }
+    /* Logo Space Obra */
+    #logo {
+        width: 10vw;
+    }
+    .logo-img {
+        width: 80%;
+    }
+
+    .logo-img:hover {
+        transform: scale(1.1);
+    }
+
+    /* Redes Sociais */
+    #social {
+        width: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-img {
+        width: 40%;
+    }
+
+    .social-img:hover {
+        transform: scale(1.2);
+    }
+
+    /* Exibir o menu de navegação no desktop */
+    .desktop-nav {
+        display: block;
+    }
+
+    .desktop-nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+    }
+
+    .desktop-nav li {
+        list-style: none;
+        padding: 16px;
+        font-weight: bold;
+    }
+
+    .desktop-nav li a {
         color: #302f2f;
         font-size: 1.125rem;
         text-decoration: none;
     }
 
-    .nav li a:hover {
-        font-weight: bold;
-    }
-    
-    .menu-bg, #menu {
-        top: 20px;
-        right: 0;
-        position: absolute;
+    .desktop-nav li a:hover {
+        color: #3c3ac5;
     }
 
-    .menu-bg {
-        z-index: 1;
-        width: 0;
-        height: 0;
+    /* Ocultar o menu hamburguer no desktop */
+    #menu {
+        display: none;
     }
 
-    .change {
-        display: block;
-    }
-
-    .change .bar {
-        background-color: white;
-    }
-
-    .change #bar1 {
-        transform: translateY(4px) rotateZ(-45deg);
-    }
-
-    .change #bar2 {
-        opacity: 0;
-    }
-
-    .change #bar3 {
-        transform: translateY(-6px) rotateZ(45deg);
-    }
-
-    .change-bg {
-        width: 520px;
-        height: 460px;
-        transform: translate(-60%,-30%);
-    }
+    /* Botão de voltar ao início */
+        .back-button {
+            display: none;
+        }
 }

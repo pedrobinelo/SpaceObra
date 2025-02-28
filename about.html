@@ -23,22 +23,35 @@
                 <img src="./assets/img/icons/whats.svg" alt="WhatsApp" class="social-img">
             </a>
         </div>
-        <!-- Menu hamburguer -->
+        <!-- Menu de navegação para desktop -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="about.html">Sobre nós</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+        <!-- Menu hamburguer para mobile -->
         <div id="menu">
             <div id="menu-bar" onclick="menuOnClick()">
               <div id="bar1" class="bar"></div>
               <div id="bar2" class="bar"></div>
               <div id="bar3" class="bar"></div>
             </div>
-            <nav class="nav" id="nav">
-              <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="about.html">Sobre nós</a></li>
-                <li><a href="contact.html">Contato</a></li>
-                <!-- <li><a href="projects.html">Projetos</a></li> -->
-              </ul>
-            </nav> 
-          </div>
+            <div id="my-nav-modal" class="nav-modal">
+                <!-- Modal content -->
+                <div class="menu-modal-content">
+                    <nav class="nav" id="nav">
+                        <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="about.html">Sobre nós</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                        <!-- <li><a href="projects.html">Projetos</a></li> -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <div class="container">

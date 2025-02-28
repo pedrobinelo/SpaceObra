@@ -23,28 +23,41 @@
                 <img src="./assets/img/icons/whats.svg" alt="WhatsApp" class="social-img">
             </a>
         </div>
-        <!-- Menu hamburguer -->
+        <!-- Menu de navegação para desktop -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="about.html">Sobre nós</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+        <!-- Menu hamburguer para mobile -->
         <div id="menu">
             <div id="menu-bar" onclick="menuOnClick()">
               <div id="bar1" class="bar"></div>
               <div id="bar2" class="bar"></div>
               <div id="bar3" class="bar"></div>
             </div>
-            <nav class="nav" id="nav">
-              <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="about.html">Sobre nós</a></li>
-                <li><a href="contact.html">Contato</a></li>
-                <!-- <li><a href="projects.html">Projetos</a></li> -->
-              </ul>
-            </nav> 
-          </div>
+            <div id="my-nav-modal" class="nav-modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <nav class="nav" id="nav">
+                        <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="about.html">Sobre nós</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                        <!-- <li><a href="projects.html">Projetos</a></li> -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <div class="container">
             <h1 class="title">Informações de contato</h1>
             <p class="main-info-p" id="phone">
-                <a href="tel:+55 (67) 9 9311-0243">+55 (67) 99311-0243</a>
+                <a href="https://wa.me/5567993110243" target="_blank">+55 (67) 99311-0243</a>
             </p>
             <p class="main-info-p" id="mail">
                 <a href="mailto: spaceobra@gmail.com">spaceobra@gmail.com</a>

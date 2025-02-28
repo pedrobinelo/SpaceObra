@@ -56,3 +56,88 @@
     .information {
         padding: 30px;
     }
+
+/* Tablet - Pequeno e médio */
+@media (min-width: 768px) and (max-width: 1023px) {
+    main {
+        justify-content: space-evenly;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .description, .location p, .information {
+        font-size: 1.125rem;
+    }
+}
+
+/* Tablet - Grande */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    main {
+        justify-content: space-evenly;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+    }
+
+    .description, .location p {
+        font-size: 1.5rem;
+    }
+
+    .information {
+        display: none;
+    }
+}
+/* Desktop */
+@media (min-width: 1200px) {
+    main {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .container {
+        padding: 30px;
+        align-self: flex-start;
+        text-align: justify;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+    .description {
+        font-size: 1.125rem;
+    }
+
+    .location {
+        padding: 0 50px;
+        align-self: center;
+    }
+    .location p {
+        font-size: 1.125rem;
+        text-align: justify;
+    }
+    .information {
+        display: none;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}

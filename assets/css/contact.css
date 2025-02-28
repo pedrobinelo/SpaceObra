@@ -47,3 +47,37 @@
     #mail::before {
         background-image: url('../img/icons/mail_icon.svg');
     }
+
+/* Tablet - Pequeno e médio */
+@media (min-width: 768px) and (max-width: 1023px) {
+    main {
+        justify-content: space-evenly;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    .main-info-p {
+        font-size: 1.5rem; 
+    }
+}
+/* Tablet - Grande */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    main {
+        justify-content: flex-start;
+    }
+
+    .container {
+        padding: 50px;
+    }
+    .main-info-p {
+        font-size: 1.75rem; 
+    }
+}
+/* Desktop */
+@media (min-width: 1200px) {
+    main {
+        justify-content: flex-start;
+    }
+}
