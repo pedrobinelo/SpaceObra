@@ -1,0 +1,113 @@
+main {
+    width: 100vw;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/logo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 1 0 auto; /* Main ocupa o restante do espaço disponível */
+    overflow-y: auto; /* Permite rolagem se o conteúdo for maior que a altura disponível */
+}
+.container {
+    color: #edd7d7;
+    padding: 0 30px 15px 30px;
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+#professional {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* Foto do(a) profissional */
+    #professional-photo {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #professional-photo img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #professional-photo:hover {
+        cursor: pointer;
+        filter: brightness(0.8);
+    }
+
+/* Nome do profissional */
+    #about-professional {
+        border: none;
+        background-color: transparent;
+        color: #FFF;
+        font-family: "QuickSand", sans-serif;
+        font-size: 1.125rem;
+        font-weight: bold;
+    }
+    
+    #about-professional:hover {
+        cursor: pointer;
+        filter: brightness(0.7);
+    }
+
+/* Modal Sobre */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin: 50% auto;  /* 15% from the top and centered */
+        padding: 0.5rem 1rem; 
+        border: 1px solid #888;
+        width: 60%; /* Could be more or less, depending on screen size */
+        font-family: "QuickSand", sans-serif;
+        color: #302f2f;
+        text-align: justify;
+    }
+
+    #modal-about {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .modal-content ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .modal-about-professional p {
+        font-size: 3rem;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }

@@ -1,0 +1,49 @@
+/* Informações de contato */
+    main {
+        width: 100vw;
+        /* height: 100%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/logo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        flex: 1 0 auto; /* Main ocupa o restante do espaço disponível */
+        overflow-y: auto; /* Permite rolagem se o conteúdo for maior que a altura disponível */
+    }
+    .container {
+        color: #edd7d7;
+        padding: 0 30px 15px 30px;
+    }
+    .main-info-p {
+        margin: .5rem;
+        font-weight: normal;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.25rem; 
+    }
+    .main-info-p a {
+        color: #FFF;
+        text-decoration: none;
+    }
+    .main-info-p a:hover {
+        text-decoration: underline;
+    }
+    .main-info-p::before {
+        content: '';
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: .5rem;
+    }
+
+    #phone::before {
+        background-image: url('../img/icons/phone_icon.svg');
+    }
+    #mail::before {
+        background-image: url('../img/icons/mail_icon.svg');
+    }

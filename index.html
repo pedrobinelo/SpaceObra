@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Obra</title>
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="icon" href="./assets/img/icon-logo.jpg" type="image/x-icon"> 
+    <!-- Normalize CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="./assets/img/logo.jpg" alt="Logo Space Obra" class="logo-img">
+            </a>
+        </div>
+        <div id="social">
+            <a href="https://www.instagram.com/spaceobra?igsh=MW1tczY2Znk1aW54OQ==" target="_blank">
+                <img src="./assets/img/icons/instagram.svg" alt="Instagram" class="social-img">
+            </a>
+        </div>
+        <!-- Menu hamburguer -->
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+            </div>
+            <div id="my-nav-modal" class="nav-modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <nav class="nav" id="nav">
+                        <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="about.html">Sobre nós</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                        <!-- <li><a href="projects.html">Projetos</a></li> -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="title">Somos a Space Obra </h1>
+            <h2 class="subtitle">Construindo o futuro com qualidade e inovação</h2>
+            <p class="description">Entre em contato conosco para realizar seu projeto dos sonhos!</p>
+        </div>
+        <div class="location">
+            <p>
+                Te esperamos na Rua Arcênia, 675 
+            </p>
+            <p>
+                Vila Giocondo Orsi
+            </p>
+            <p>
+                Campo Grande - MS
+            </p>
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14954.650873901119!2d-54.58177833351034!3d-20.43795636686288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e8f60b07700b%3A0xac68138fd33f9c4e!2sR.%20Arc%C3%AAnia%2C%20675%20-%20Vila%20Giocondo%20Orsi%2C%20Campo%20Grande%20-%20MS%2C%2079022-040!5e0!3m2!1spt-BR!2sbr!4v1740672722681!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="information">
+            <h2 class="description">Veja mais informações acessando o menu no canto superior direito.</h2>
+        </div>
+    </main>
+    <footer>
+        <p class="footer-text">
+            &copy; 2025 Space Obra
+        </p>
+        <p class="footer-text">
+            Todos os direitos reservados.
+        </p>
+    </footer> 
+    <!-- JavaScript files -->
+    <script src="./assets/js/global.js"></script>
+    <!-- <script src="./assets/js/modal.js"></script> -->
+</body>
+</html>
